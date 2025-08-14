@@ -1,0 +1,25 @@
+#Add this after proxy section
+
+use_standard_auth: true
+  auth_configs:
+    authToken:
+      # Auth Key Header Name
+      auth_header_name: Authorization
+      # Use cookie value
+      use_cookie: false
+      # Cookie name
+      cookie_name: ""
+      # Allow query parameter as well as header
+      use_param: false
+      # Parameter name
+      param_name: ""
+      # Enable client certificate
+      use_certificate: false
+      # Enable Signature validation
+      validate_signature: false
+      signature:
+        algorithm: ""
+        header: ""
+        secret: ""
+        allowed_clock_skew: 0
+        error_code: 0
